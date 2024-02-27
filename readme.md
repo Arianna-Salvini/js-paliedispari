@@ -20,7 +20,7 @@ Tools:
 - const/let
 - array
 - .split
-- .revers
+- .toRevers
 - .join
 - if/else
 - consol.log
