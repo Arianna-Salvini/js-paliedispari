@@ -24,10 +24,10 @@ let message = ""
  * @returns {String}
  */
 function gameEvenOrOdd(userChoice, userNumber) {
-    if (sum % 2 == 0 && userChoice == 'pari') {
+    if (sum % 2 == 0 && userChoice == 'pari' || sum % 2 != 0 && userChoice == 'dispari') {
         return message = 'You win!'
-    } else if (sum % 2 != 0 && userChoice == 'dispari') {
-        return message = 'You win!';
+    // } else if (sum % 2 != 0 && userChoice == 'dispari') {
+    //     return message = 'You win!';
     } else {
         return message = 'You lost!';
     }
