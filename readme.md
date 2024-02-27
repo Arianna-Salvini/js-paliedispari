@@ -1,5 +1,40 @@
 # Palidroma
-Chiedere all’utente di inserire una parola Creare una funzione per capire se la parola inserita è palindroma
+- Step 1: Chiedere all’utente di inserire una parola 
+    - Creare una variabile per la parola dell'utente
+        - Usare prompt per l'inserimento
+
+     - Creare un array contenente i caratteri della parola inserita
+        - Usare .split per scomporre la parola in caratteri
+        - Creare un secondo array coi caratteri della parola inserita al contrario con .reverse
+            - .join per creare il secondo array
+    
+    - Verificare se la parola è palindroma
+        - SE i caretteri della parola e i caratteri invertiti sono uguali la parola è pallindroma
+            - Mssaggio appropriato
+        - ALTRIMENTI la parola non è palindroma
+            - Messaggio appropriato
+
+Tools:
+- const/get
+- prompt
+- const/let
+- array
+- .split
+- .revers
+- .join
+- if/else
+- consol.log
+
+- Step 2: Creare una funzione per capire se la parola inserita è palindroma
+
+
+
+
+
+Tools:
+- function
+- consol.log
+
 
 
 # Pari e Dispari
