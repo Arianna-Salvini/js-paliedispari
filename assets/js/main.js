@@ -20,18 +20,22 @@ const userWord = prompt("Inserisci una parola per scoprire se è palindroma")
 
 // const userWord = "pera";
 
-const digit = userWord.split("");
-console.log(digit);
+function isPalindrom(userWord) {
 
-const digitBackward = digit.toReversed();
-console.log(digitBackward);
+    const digit = userWord.split("");
+    // console.log(digit);
 
-const reversWord = digitBackward.join("")
-console.log(reversWord);
+    const digitBackward = digit.toReversed();
+    // console.log(digitBackward);
 
-if (userWord === reversWord) {
-    console.log(`The word "${userWord}" is a palindrome`);
-} else {
-    console.log(`The word "${userWord}" is not a palindrome`);
+    const reversWord = digitBackward.join("")
+    // console.log(reversWord);
+
+    if (userWord === reversWord) {
+        console.log(`The word "${userWord}" is a palindrome`);
+    } else {
+        console.log(`The word "${userWord}" is not a palindrome`);
+    }
 }
 
+console.log(isPalindrom(userWord));
