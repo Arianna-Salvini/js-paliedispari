@@ -5,17 +5,15 @@ const userNumber = parseInt(prompt('Scegli un numero da 1 a 5'));
 
 // const pcNumber = Math.round(Math.random() * 5) + 1
 function generatePcNumber(min, max) {
-    return Math.round(Math.random() * (max - min +1 )) +1
+    return Math.round(Math.random() * (max - min + 1)) + 1
 }
 const pcNumber = generatePcNumber(1, 5)
 
 console.log(userChoice); console.log(userNumber); console.log(pcNumber);
 
 let sum = userNumber + pcNumber
-
 console.log(sum);
 
-let message = ""
 /**
  * From user choice between "pari" o "dispari" and the sum of user number choice and random generated pc number decide if user win or lost
  * 
@@ -24,10 +22,12 @@ let message = ""
  * @returns {String}
  */
 function gameEvenOrOdd(userChoice, userNumber) {
+    let message = ""
+
     if (sum % 2 == 0 && userChoice == 'pari' || sum % 2 != 0 && userChoice == 'dispari') {
         return message = 'You win!'
-    // } else if (sum % 2 != 0 && userChoice == 'dispari') {
-    //     return message = 'You win!';
+        // } else if (sum % 2 != 0 && userChoice == 'dispari') {
+        //     return message = 'You win!';
     } else {
         return message = 'You lost!';
     }
