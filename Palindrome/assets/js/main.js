@@ -19,7 +19,7 @@ const userWord = prompt("Inserisci una parola per scoprire se è palindroma")
 // console.log(userWord);
 
 // const userWord = "pera";
-let message = ''
+
 
 function isPalindrom(userWord) {
 
@@ -31,6 +31,8 @@ function isPalindrom(userWord) {
 
     const reversWord = digitBackward.join("")
     // console.log(reversWord);
+
+    let message = ''
 
     if (userWord === reversWord) {
         message = `The word '${userWord}' is a palindrome`
