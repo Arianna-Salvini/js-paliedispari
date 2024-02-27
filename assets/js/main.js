@@ -15,11 +15,16 @@ console.log('Pari o dispari?');
 //         - ALTRIMENTI la parola non è palindroma
 //             - Messaggio appropriato
 
-const userWord = prompt("Inserisci una parola per scoprire se è palindroma")
-console.log(userWord);
+// const userWord = prompt("Inserisci una parola per scoprire se è palindroma")
+// console.log(userWord);
 
-// const userWord = "anna"
+const userWord = "pera";
 
-let digit = [userWord.split("")]
-
+const digit = userWord.split("");
 console.log(digit);
+
+const digitBackward = digit.toReversed();
+
+console.log(digitBackward);
+// let digitBackwards = []
+// console.log(digitBackwards);
