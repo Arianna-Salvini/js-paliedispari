@@ -16,5 +16,10 @@ console.log('Pari o dispari?');
 //             - Messaggio appropriato
 
 const userWord = prompt("Inserisci una parola per scoprire se è palindroma")
-
 console.log(userWord);
+
+// const userWord = "anna"
+
+let digit = [userWord.split("")]
+
+console.log(digit);
